@@ -1,11 +1,6 @@
-﻿using FluentNHibernate.Cfg;
-using FluentNHibernate.Cfg.Db;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using NHibernate;
-using NHibernate.Cfg;
-using NHibernate.Tool.hbm2ddl;
-using System;
-using System.IO;
+
 
 
 namespace RESTful_API
@@ -15,7 +10,7 @@ namespace RESTful_API
     public class PeopleController : ControllerBase
     {
         public const string DbFile = "DataBase.db";
-        private readonly ISessionFactory _sessionFactory = Program.CreateSessionFactory();
+        private readonly ISessionFactory _sessionFactory;
 
         public PeopleController(ISessionFactory sessionFactory)
         {
@@ -23,17 +18,19 @@ namespace RESTful_API
         }
         
         
-        // GET: api/People
+        // GET: 
         [HttpGet]
         public ActionResult<IEnumerable<Person>> Get()
         {
             using (var session = _sessionFactory.OpenSession())
             {
                 var people = session.Query<Person>().ToList();
-                return Ok(people);
+                // var result = people.Where(x => x.Age >= 10);  //Wykorzystanie LINQ Where
+                var result = people.Skip(3).Take(2);            //Wykorzysanie LINQ Skip i Take
+                return Ok(result);
             }
         }
-        // GET: api/People/5
+        // GET:
         [HttpGet("{id}", Name = "Get")]
         public ActionResult<Person> Get(int id)
         {
@@ -48,7 +45,7 @@ namespace RESTful_API
             }
         }
 
-        // POST: api/People
+        // POST: 
         [HttpPost]
         public ActionResult<Person> Post([FromBody] Person person)
         {
@@ -69,7 +66,7 @@ namespace RESTful_API
 
         }
 
-        // PUT: api/People/5
+        // PUT: 
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] Person person)
         {
@@ -91,7 +88,7 @@ namespace RESTful_API
             }
         }
 
-        // DELETE: api/People/5
+        // DELETE: 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

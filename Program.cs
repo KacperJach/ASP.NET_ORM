@@ -1,15 +1,9 @@
-
-
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Tool.hbm2ddl;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace RESTful_API
 {
@@ -22,11 +16,11 @@ namespace RESTful_API
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            ISessionFactory sessionFactory = CreateSessionFactory();
-            builder.Services.AddSingleton(sessionFactory);
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            
+            ISessionFactory sessionFactory = CreateSessionFactory(); // Utworzenie sesji Bazy Danych
+            builder.Services.AddSingleton(sessionFactory); //Dependency Injection
+            builder.Services.AddControllers(); //Dodanie kontrolerow do mapowania
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
@@ -41,49 +35,26 @@ namespace RESTful_API
 
             app.UseHttpsRedirection();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.MapControllers();
 
             app.Run();
 
-           /*
-            // Tworzenie nowej osoby
-            var p = new Person { Name = "John", Age = 30 };
-            var p2 = new Person { Name = "Rick", Age = 40 };
-            var p3 = new Person { Name = "Tomas", Age = 50 };
-            var p4 = new Person { Name = "Ana", Age = 60 };
-            AddPerson(sessionFactory, p);
-            AddPerson(sessionFactory, p2);
-            AddPerson(sessionFactory, p3);
-            AddPerson(sessionFactory, p4);
-            /*
-            // Odczyt i wyœwietlenie osób
-            ReadPeople(sessionFactory);
-
-            // Aktualizacja osoby
-            UpdatePerson(sessionFactory, 1);
-
-            // Usuniêcie osoby
-            DeletePerson(sessionFactory, 3);
-
-            ReadPeople(sessionFactory);*/
+           
 
 
         }
         public static void BuildSchema(Configuration config)
         {
-            // delete the existing db on each run
+            // create new DB File if not existing yet
             if (!File.Exists(DbFile))
                 new SchemaExport(config).Create(false, true);
         }
         public static ISessionFactory CreateSessionFactory()
         {
             return Fluently.Configure()
-              .Database(
-                SQLiteConfiguration.Standard
-                  .UsingFile(DbFile)
-              )
+              .Database(SQLiteConfiguration.Standard.UsingFile(DbFile))
               .Mappings(m =>
                 m.FluentMappings.AddFromAssemblyOf<Program>())
               .ExposeConfiguration(BuildSchema)
