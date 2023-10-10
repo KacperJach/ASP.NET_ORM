@@ -1,0 +1,59 @@
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\appsettings.json
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\RESTful API.exe
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\RESTful API.deps.json
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\RESTful API.runtimeconfig.json
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\RESTful API.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\ref\RESTful API.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\RESTful API.pdb
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\Antlr3.Runtime.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\EntityFramework.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\FluentNHibernate.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\Iesi.Collections.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\NHibernate.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\Remotion.Linq.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\Remotion.Linq.EagerFetching.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\System.Data.SQLite.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\System.Data.SQLite.EF6.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Kacper\Desktop\RESTful API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\RESTful API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\RESTful API.AssemblyInfoInputs.cache
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\RESTful API.AssemblyInfo.cs
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\RESTful API.csproj.CoreCompileInputs.cache
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\RESTful API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\RESTful API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\scopedcss\bundle\RESTful API.styles.css
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\RESTful API.csproj.CopyComplete
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\RESTful API.dll
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\ref\RESTful API.dll
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\RESTful API.pdb
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\RESTful API.genruntimeconfig.cache
+C:\Users\Kacper\Desktop\RESTful API\obj\Debug\net6.0\RESTful API.csproj.AssemblyReference.cache
