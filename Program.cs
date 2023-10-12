@@ -19,7 +19,7 @@ namespace RESTful_API
             
             ISessionFactory sessionFactory = CreateSessionFactory(); // Utworzenie sesji Bazy Danych
             builder.Services.AddSingleton(sessionFactory); //Dependency Injection
-            builder.Services.AddControllers(); //Dodanie kontrolerow do mapowania
+            builder.Services.AddControllers(); //Wlaczenie obslugi kontrolerow
 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -33,11 +33,11 @@ namespace RESTful_API
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
+            app.UseHttpsRedirection();  //Przekierowanie na https
 
             //app.UseAuthorization();
 
-            app.MapControllers();
+            app.MapControllers(); // Konfiguracja routingu
 
             app.Run();
 
@@ -47,9 +47,8 @@ namespace RESTful_API
         }
         public static void BuildSchema(Configuration config)
         {
-            // create new DB File if not existing yet
             if (!File.Exists(DbFile))
-                new SchemaExport(config).Create(false, true);
+                new SchemaExport(config).Create(false, true);   //Utworzenie pliku bazy danych jesli nie istnieje
         }
         public static ISessionFactory CreateSessionFactory()
         {
